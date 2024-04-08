@@ -1,9 +1,19 @@
 import Image from "next/image";
 import ArticleList from "./ArticleList";
 import { getAllArticles } from "@/blogAPI";
+import { useEffect } from "react";
 
 export default async function Home() {
   const articles =await getAllArticles();
+
+  /* useEffect(() =>{
+    const getBlogAll = async()=>{
+      const res = await fetch('http://localhost:3001/posts');
+      const articles = await res.json();
+      console.log(articles);
+    };
+    getBlogAll();
+  },[]) */
 
   return (
     <div className="md:flex">
