@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ArticleList from "./ArticleList";
+import ArticleList from "./components/ArticleList";
 import { getAllArticles } from "@/blogAPI";
 import { useEffect } from "react";
 
