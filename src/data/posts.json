@@ -1,16 +1,16 @@
 {
-    "posts":[
-        {
-            "id":"next.js14-udemy",
-            "title":"Next14を学ぶ",
-            "content":"Next14を学んでいる最中です",
-            "createdAt":"2024/04/01"
-        },
-        {
-            "id":"json-udemy",
-            "title":"JSONServer",
-            "content":"This project uses the Fair Source License. Note: Only organizations with 3+ users need to contribute a small amount through sponsorship sponsor for usage",
-            "createdAt":"2024/04/04"
-        }
-    ]
+  "posts": [
+    {
+      "id": "next.js14-udemy",
+      "title": "Next14を学ぶ",
+      "content": "Next14を学んでいる最中です",
+      "createdAt": "2024/04/01"
+    },
+    {
+      "id": "next.js1",
+      "title": "Next1",
+      "content": "Next1中です",
+      "createdAt": "2024/04/10"
+    }
+  ]
 }
