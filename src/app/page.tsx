@@ -2,19 +2,12 @@ import Image from "next/image";
 import ArticleList from "./components/ArticleList";
 import { getAllArticles } from "@/blogAPI";
 import { useEffect } from "react";
+import { supabase } from "@/utils/supabaseClient";
 
 export default async function Home() {
   const articles =await getAllArticles();
 
-  /* useEffect(() =>{
-    const getBlogAll = async()=>{
-      const res = await fetch('http://localhost:3001/posts');
-      const articles = await res.json();
-      console.log(articles);
-    };
-    getBlogAll();
-  },[]) */
-
+  console.log(supabase);
   return (
     <div className="md:flex">
       <section className=" w-full md:w-2/3 flex flex-col items-center px-3">

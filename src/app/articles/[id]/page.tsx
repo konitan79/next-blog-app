@@ -7,7 +7,6 @@ const Article = async({params}:{params:{id:string}}) => {
 
     const detailArticle = await getDetailArticles(params.id); 
 
-    console.log(detailArticle);
   return (
     <div className='min-h-screen md:px-12 max-w-3xl mx-auto p-5'>
         <Image
