@@ -11,7 +11,13 @@ type DeleteButton ={
 const DeleteButton = ({id}:DeleteButton) => {
     const router = useRouter();
     const deleteClick = async()=>{
-        await deleteArticles(id);
+       /*  await deleteArticles(id); */
+
+        const API_URL = process.env.NEXT_PUBLIC_API_URL;
+        await fetch(`${API_URL}/api/${id}`,{
+          method:"DELETE",
+        });
+
         router.push("/");
         router.refresh();
     }
